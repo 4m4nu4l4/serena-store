@@ -32,3 +32,9 @@ h1 {
 .row {
     height: 70rem;
 }
+    .btn{
+        background-color:#CE7FA0;
+    }
+.card{
+    background-color:#CE7FA0;
+}
