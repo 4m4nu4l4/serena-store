@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'winterbeauty';
+    src: url('./font/winterbeauty-Script.otf') format('truetype');
+  }
+
+.color-default {
+    background-color: #FEEFCE;
+}
+
+h1 {
+    color: black;
+}
+
+.logo-navbar{
+    width: 10rem;
+    height: 10rem;
+}
+
+.carousel-inner {
+    width: auto;
+    height: 80%;
+}
+
+.carousel-item{
+    border-radius: 2.5%;
+    height: 50rem;
+}
+.fonte-alterada{
+    font-family: winterbeauty ;
+}
+
+.row {
+    height: 70rem;
+}
+    .btn{
+        background-color:#CE7FA0;
+    }
+.card{
+    background-color:#CE7FA0;
+}
+.rodape{
+    width: auto;
+    height: 80%;
+}
