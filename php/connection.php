@@ -1,6 +1,6 @@
 ?php 
 
-    define('HOST', 'localhost'); 
+    define('HOST', '000webhost'); 
 
     define('DB', 'id19648590_serena'); 
 
@@ -24,4 +24,4 @@
 
      
 
-?> 
+?>  
