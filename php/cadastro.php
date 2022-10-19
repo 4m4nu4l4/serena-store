@@ -11,12 +11,22 @@
     if ($login == "" || $login == null ){
         echo "<script language='javascript' type='text/javascript'> alert('Esse campo deve ser preenchido!!'); window.location.href='cadastro.html'; </script>";
     
-
-    }else{
+     }else{
         if($logarray == $login){
             echo "<script language='javascript' type='text/javascript'>
             alert('Esse login já existe'); window.location.href='cadastro.html'; </script>"
         die();
+        }else{
+            $query = "INSERT INTO cliente (nome,email) VALUES ('$nome', '$email')";
+            $insert = mysql_query($query, $connect);
+
+            if($insert){
+                echo"<script language='javascript' type='text/javascript'> alert('Usuário cadastrado com sucesso!');window.location.href='login.html'</script>";
+            }else{
+                echo"<script language='javascript' type='text/javascript'>
+                alert('Não foi possível cadastrar esse usuário');window.location
+                .href='cadastro.html'</script>";
+            }
         }
     }
 ?>
