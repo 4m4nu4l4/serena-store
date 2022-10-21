@@ -102,6 +102,7 @@
         </div>
     </div>
 
+
     <fieldset>
     <legend> Cadastro: </legend>
         <label for="nome"> NOME:</label> 
