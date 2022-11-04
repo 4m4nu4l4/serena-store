@@ -39,7 +39,7 @@ h1 {
     height: 800px;
     margin: 0;
     display: grid;
-    grid-template-columns: 1fr 20px 30px 30px 30px 30px 1fr;
+    grid-template-columns: 1fr 20px 30px 30px 30px 30px 30px 1fr;
     align-items: center;
     justify-items: center;
   }
@@ -55,7 +55,7 @@ h1 {
     overflow: hidden;
     transform-style: preserve-3d;
     perspective: 900px;
-    --items: 5;
+    --items: 6;
     --middle: 3;
     --position: 1;
     pointer-events: none;
@@ -80,19 +80,23 @@ h1 {
   }
   div.item:nth-of-type(2) {
     --offset: 2;
-    background-image: url("../img/teste3.png.png");
+    background-image: url("../img/teste41.png");
   }
   div.item:nth-of-type(3) {
     --offset: 3;
-    background-color: #ff9770;
+    background-image: url("../img/teste5.png");
   }
   div.item:nth-of-type(4) {
     --offset: 4;
-    background-color: #ffd670;
+    background-image: url("../img/teste6.png");
   }
   div.item:nth-of-type(5) {
     --offset: 5;
-    background-color: #e9ff70;
+    background-image: url("../img/teste7.png");
+  }
+  div.item:nth-of-type(6) {
+    --offset: 6;
+    background-image: url("../img/teste.png");
   }
   
 
@@ -135,6 +139,14 @@ h1 {
   }
   input:nth-of-type(5):checked ~ main#carousel {
     --position: 5;
+  }
+  
+  input:nth-of-type(6) {
+    grid-column: 1 / 8;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(6):checked ~ main#carousel {
+    --position: 6;
   }
   
   .row {
