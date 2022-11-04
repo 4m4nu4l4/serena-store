@@ -1,4 +1,5 @@
 <?php
+/* começo do php para o cadastro*/
         include 'connection.php';
 
     $login = $_POST ['login'];
@@ -55,6 +56,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
 </head>
 
 <body class="color-default container-fluid">
