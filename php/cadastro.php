@@ -1,5 +1,6 @@
 <?php
-        include 'connection.php';
+/* começo do php para o cadastro*/
+        include 'connection.php'; //incluir o cadastro na conexão
 
     $login = $_POST ['login'];
     $senha = MD5 ($_POST['senha']);
@@ -34,7 +35,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -55,6 +56,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
 </head>
 
 <body class="color-default container-fluid">
