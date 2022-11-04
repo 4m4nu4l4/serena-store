@@ -76,8 +76,15 @@ if ($sql->execute(array($email, senha))){
         </div>
     </nav>
     <!-- Navbar termina aqui -->
-            </div>
-        </div>
-    </div>
+    <form action="" method="POST">
+    <label for="nome"> NOME:</label> 
+        <input type="text"  name="nome" required>
+        <label for="email"> EMAIL:</label> 
+        <input type="text"  name="email" required>
+        <label for="senha"> SENHA:</label> 
+        <input type="password" name="senha" id="senha" requeried > 
+        <label for="confirma"> REPETIÇÃO DA SENHA:</label> 
+        <input type="password"  name="confirma" id="confirma" requeried onblur="alerta();">  
+    </form>
 </body>
 </html>
