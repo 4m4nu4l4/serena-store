@@ -1,6 +1,6 @@
 <?php
 /* começo do php para o cadastro*/
-        include 'connection.php';
+        include 'connection.php'; //incluir o cadastro na conexão
 
     $login = $_POST ['login'];
     $senha = MD5 ($_POST['senha']);
@@ -35,7 +35,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
