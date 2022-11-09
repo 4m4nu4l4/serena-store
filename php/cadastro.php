@@ -47,18 +47,14 @@
 <body>
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="./css/index.css">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">     
 </head>
-
 <body class="color-default container-fluid">
     <!-- Navbar começa aqui -->
     <nav class="navbar navbar-expand-lg navbar-light color-default d-flex flex-column">
@@ -94,7 +90,7 @@
                     <a class="nav-link" href="#">Xuxinhas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active href="cadastro.html">Olá! entre ou cadastre-se</a>
+                    <a class="nav-link active" href="cadastro.html">Olá! entre ou cadastre-se</a>
                 </li>
             </ul>
         </div>
@@ -103,8 +99,6 @@
             </div>
         </div>
     </div>
-
-
     <fieldset>
     <legend> Cadastro: </legend>
         <label for="nome"> NOME:</label> 
@@ -120,8 +114,8 @@
    <fieldset>
 <br>
     <img src="img/sobrenos.jpeg" class="img-thumbnail nos" alt=" 10">
-    <h1 class="text-center  fonte-alterada">Acompanhe nossas novidades</h1>
-    <h3 class="text-center fonte-alterada">cadastre seu email para receber informações exclusivas</h3>
+    <h1 class="text-center  fonte-alterada">Acompanhe nossas novidades.</h1>
+    <h3 class="text-center fonte-alterada">cadastre seu email para receber informações exclusivas!!</h3>
     <div class="row">
         <br>
         <br\>
@@ -130,11 +124,15 @@
             <label for="inputPassword5" class="form-label">Email</label>
             <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
             <div id="passwordHelpBlock" class="form-text">
-                Confira seu celular para ver se recebeu notificações
+                Confira seu celular para ver se recebeu notificações!
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                 <button class="btn btn- me-md-2" type="button">Cadastrar</button>
                 <br>
+                <div class='texto_cad'>
+                    <p>Já foi cadastrada/o? Entre na sua conta!</p>
+                    <button class="btn btn-me-md-2" color="$yellow-100" type="button" href="login.php">Página de login</button>
+            </div>
                 <footer>
                     <br>
                     <br>
@@ -142,8 +140,6 @@
                         <p>Redes sociais</p>
                         <p><a href="">@Serena_str_</a></p>
                     </div>
-                </footer>
-
-    
+                </footer>   
 </body>
 </html>
