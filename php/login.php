@@ -78,7 +78,7 @@ if ($sql->execute(array($email, senha))){
     <!-- Navbar termina aqui -->
     <form action="" method="POST">
     <label for="nome"> NOME:</label> 
-        <input type="text"  name="nome" required>
+        <input type="text"  name="nome" required >
         <label for="email"> EMAIL:</label> 
         <input type="text"  name="email" required>
         <label for="senha"> SENHA:</label> 
