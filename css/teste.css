@@ -100,7 +100,9 @@ div.item:nth-of-type(6) {
   background-image: url("../img/teste.png");
 }
 
-
+.inputs{
+  align-items: flex-start;
+}
 
 input:nth-of-type(1) {
   grid-column: 1 / 3;
