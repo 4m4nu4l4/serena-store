@@ -1,13 +1,14 @@
+<html>
 <head>
-    <link rel="stylesheet" type="text/CSS" href="../css/testeDoCadastro.css">
     <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/testeDoCadastro.css">
   
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+</head>
       <body class="color-default container-fluid">
         <!-- Navbar começa aqui -->
         <nav class="navbar navbar-expand-lg navbar-light color-default d-flex flex-column">
@@ -49,83 +50,60 @@
             </div>
         </nav>
     <meta charset="utf-8">
-    <style>
-      body {
-        background-image: url(../imagens/fundo.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-      }
-  
-      #cadastro {
-        width: 25%;
-        height: 387pt;
-        color: white;
-        background-color: #11111199;
-        padding: 12px;
-        border: 4px;
-        border-radius: 5px;
-      }
-  
-      #check {
-        color: white;
-      }
-    </style>
-  </head>
-  
- 
     
-
-
-
-    <div id="cadastro" class="mx-auto">
-      <div class="container mx-auto pt-10 px-10">
-        <div class="text-lg text-center font-bold mb-4">
-  
-  
-          <form action="" method="POST">
-  
-  
-  
-            <div class="form-group">
-              <label form="nome">
-                <h4>Name</h4>
-              </label>
-              <input type="text" name="nome" class="form-control" id="nome-id" required>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">
-                <h4>Email</h4>
-              </label>
-              <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                required>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">
-                <h4>Password</h4>
-              </label>
-              <input type="password" name="senha" class="form-control" id="password" name="senha" required>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">
-                <h4>Confirm password</h4>
-              </label>
-              <input type="password" class="form-control" id="confirm_password" name="confirmarsenha" required>
-            </div>
-            <div id="check" class="form-check">
-              <input class="form-check-input" type="checkbox" name="cbkativo" id="notificações">
-              <label for="embalagem">
-                <h4>Send me notification</h4>
-              </label>
-            </div>
-            <a href="login.html"><button type="button" class="btn btn-danger btn-lg">Cancel</button></a>
-            <button type="submit" name="acao" value="Cadastrar" class="btn btn-success btn-lg">Submit</button>
-          </form>
+<div class="slw">
+  <div class="form-structor">
+    <div class="signup">
+      <h2 class="form-title" id="signup"><span>or</span>Sign up</h2>
+      <div class="form-holder">
+        <input type="text" class="input" placeholder="Name" />
+        <input type="email" class="input" placeholder="Email" />
+        <input type="password" class="input" placeholder="Password" />
+      </div>
+      <button class="submit-btn">Sign up</button>
+    </div>
+    <div class="login slide-up">
+      <div class="center">
+        <h2 class="form-title" id="login"><span>or</span>Log in</h2>
+        <div class="form-holder">
+          <input type="email" class="input" placeholder="Email" />
+          <input type="password" class="input" placeholder="Password" />
         </div>
+        <button class="submit-btn">Log in</button>
       </div>
     </div>
-    <br>
+  </div>
   
+  <script>
+    console.clear();
   
+  const loginBtn = document.getElementById('login');
+  const signupBtn = document.getElementById('signup');
+  
+  loginBtn.addEventListener('click', (e) => {
+    let parent = e.target.parentNode.parentNode;
+    Array.from(e.target.parentNode.parentNode.classList).find((element) => {
+      if(element !== "slide-up") {
+        parent.classList.add('slide-up')
+      }else{
+        signupBtn.parentNode.classList.add('slide-up')
+        parent.classList.remove('slide-up')
+      }
+    });
+  });
+  
+  signupBtn.addEventListener('click', (e) => {
+    let parent = e.target.parentNode;
+    Array.from(e.target.parentNode.classList).find((element) => {
+      if(element !== "slide-up") {
+        parent.classList.add('slide-up')
+      }else{
+        loginBtn.parentNode.parentNode.classList.add('slide-up')
+        parent.classList.remove('slide-up')
+      }
+    });
+  });
+  </script>
   
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -137,21 +115,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"></script>
-    <script>
-      var password = document.getElementById("password"),
-        confirm_password = document.getElementById("confirm_password");
-  
-      function validatePassword() {
-        if (password.value != confirm_password.value) {
-          confirm_password.setCustomValidity("Senhas diferentes!");
-        } else {
-          confirm_password.setCustomValidity('');
-        }
-      }
-  
-      password.onchange = validatePassword;
-      confirm_password.onkeyup = validatePassword;
-    </script>
+    
   </body>
   
   </html>
