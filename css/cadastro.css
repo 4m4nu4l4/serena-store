@@ -7,3 +7,8 @@
     src: url('./font/winterbeauty-Script.otf') format('truetype');
   }
   
+  .cadastro {
+    font-family: 'winterbeauty';
+    src: url('./font/winterbeauty-Script.otf') format('truetype');
+  }
+  }
