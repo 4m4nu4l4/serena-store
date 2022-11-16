@@ -58,3 +58,9 @@ h1 {
 .app {
   height: 400vh;
 }
+
+.sobre{
+  margin-right: -3px;
+    margin-top: 5px;
+    display: flex;
+}
