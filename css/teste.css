@@ -104,8 +104,6 @@
   text-align: center
 }
 
-.nav-item.show .nav-link,
-
 .nav-item {
   margin-bottom: -1px
 }
@@ -175,8 +173,6 @@
 }
 
 
-
-
 .nav-link:focus,
 .nav-link:hover {
   border-color: #e9ecef #e9ecef #dee2e6
@@ -218,8 +214,8 @@
 
 
 
-a {
-  color: #007bff;
+.links {
+  color: #4D1266;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects
