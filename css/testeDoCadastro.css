@@ -1,4 +1,21 @@
-.navbar-home {
+@font-face {
+    font-family: "winterbeauty";
+    src: url("./font/winterbeauty-Script.otf") format("truetype");
+  }
+  
+  .color-default {
+    background-color: #feefce;
+  }
+  
+  h1 {
+    color: black;
+  }
+  
+  .logo-navbar {
+    width: 10rem;
+    height: 10rem;
+  }
+  .navbar-home {
     background-color: #CFA99C;
 
 }
@@ -17,39 +34,6 @@
 
 }
 
-.carrosselteste {
-    margin-top: -16px;
-}
-
 .footer-link {
     color: #000000;
-}
-
-.botoes-login {
-    margin-left: 50vw;
-
-}
-
-.botao-login {
-    border-radius: 0;
-    background-color: #52362B;
-}
-
-.pesquisar {
-    float: right;
-}
-
-.containter-carrossel {
-    background-color: #7D502B;
-}
-
-.carrosselSlide {
-    background-color: #CFA99C;
-    margin-left: 300px;
-    width: auto;
-    height: 200px;
-}
-
-.escritadoCarrossel {
-    color: #211616;
 }
