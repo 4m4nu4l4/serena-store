@@ -1,6 +1,6 @@
 <?php
 
-$servername = "000webhost";
+$servername = "localhost";
 $username = "id19648590_serena_store";
 $password = "spZxF^%)Rs6kp]rr";
 

@@ -4,7 +4,7 @@
 
     $login = $_POST ['login'];
     $senha = MD5 ($_POST['senha']);
-    $connect = mysql_connect('000webhost', 'id19648590_serena_store', 'spZxF^%)Rs6kp]rr')
+    $connect = mysql_connect('000webhost', 'id19648590_serena_store', 'spZxF^%)Rs6kp]rr');
     $db = mysql_select_db ('id19648590_serena') ;
     $query_select = "SELECT nome FROM cliente  WHERE cliente = '$id_cliente' ";
     $select = mysql_query($query_select, $connect);
