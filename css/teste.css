@@ -51,7 +51,7 @@ div.item {
 
 div.item:nth-of-type(1) {
   --offset: 1;
-  background-image: url("../img/teste2.png");
+  background-image: url("../img/anel1\ \(360x640\)\ \(315x560\).jpg");
 }
 
 div.item:nth-of-type(2) {
@@ -157,5 +157,3 @@ input:nth-of-type(6):checked~main#carousel {
 .rodape{
   text-align:center  
 }
-
-
