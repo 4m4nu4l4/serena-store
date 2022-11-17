@@ -1,4 +1,5 @@
 <?php
+include 'connection.php';
 session_start();
 $_SESSION['nome'] = "";
 $_SESSION['email'] = "";
@@ -8,7 +9,7 @@ if(isset($_POST['acao'])){
     $senha = $_POST['senha'];
 
 $sql = $pdo->prepare("SELECT * FROM cliente WHERE email = ? AND senha = ?"); //usuado para selecionar o email e a senha
-if ($sql->execute(array($email, senha))){
+if ($sql->execute(array($email, $nome))){
     if($sql->rowCount()>0){
         $info = $sql->fetchALL(PDO::FETCH_ASSOC);
         foreach($info as $key => $values){
@@ -16,7 +17,7 @@ if ($sql->execute(array($email, senha))){
             $_SESSION['email'] = $values['email'];
         }
         echo 'O usuário foi encontrado, o cadastro foi realizado com sucesso!';
-        header(location:cadastro.php);
+        header('location:cadastro.php');
     }else{
         echo'Esse usuário não foi encontrado, verifique-se o cadastro foi efetuado.';
     }
