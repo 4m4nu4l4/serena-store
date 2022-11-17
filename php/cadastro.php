@@ -17,7 +17,7 @@
      }else{
         if($logarray == $login){
             echo "<script language='javascript' type='text/javascript'>
-            alert('Esse login já existe'); window.location.href='cadastro.html'; </script>"
+            alert('Esse login já existe'); window.location.href='cadastro.html'; </script>";
         die();
         }else{
             $query = "INSERT INTO cliente (nome,email) VALUES ('$nome', '$email')";
@@ -33,113 +33,114 @@
         }
     }
 ?>
-
-<!DOCTYPE html>
-<html lang="pt">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/cadastro.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <title>Cadastro</title>
-</head>
-<body>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
+    <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/testeDoCadastro.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">     
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
-<body class="color-default container-fluid">
-    <!-- Navbar começa aqui -->
-    <nav class="navbar navbar-expand-lg navbar-light color-default d-flex flex-column">
-        <a class="navbar-brand" href="#">
-            <img src="./img/logo.png" class="logo-navbar"></a>
-        <div class="collapse navbar-collapse flex-column" id="navbarNav">
-            <ul class="navbar-nav d-flex">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="aneis.html">Anéis</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="teste.html">TESTE</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Brincos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Chaveiros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Colares</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Porcelanas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pulseiras</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Xuxinhas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="cadastro.html">Olá! entre ou cadastre-se</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- Navbar termina aqui -->
+      <body class="color-default container-fluid">
+        <!-- Navbar começa aqui -->
+        <nav class="navbar navbar-expand-lg navbar-light color-default d-flex flex-column">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./img/logo.png" class="logo-navbar"></a>
+            <div class="collapse navbar-collapse flex-column" id="navbarNav">
+                <ul class="navbar-nav d-flex">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aneis.html">Anéis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="teste.html">TESTE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="brincos.html">Brincos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chaveiros.html">Chaveiros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="colares.html">Colares</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portatreco.html">Porcelanas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pulseiras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Xuxinhas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro.html">Olá! entre ou cadastre-se</a>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </nav>
+    <br>
+<div class="slw">
+  <div class="form-structor">
+    <div class="signup">
+      <h2 class="form-title" id="signup"><span>ou</span>cadastre-se</h2>
+      <div class="form-holder">
+        <input type="text" class="input" placeholder="Nome" />
+        <input type="email" class="input" placeholder="Email" />
+        <input type="password" class="input" placeholder="Senha" />
+      </div>
+      <button class="submit-btn">cadastrar</button>
     </div>
-    <fieldset>
-    <legend> Cadastro: </legend>
-        <label for="nome"> NOME:</label> 
-        <input type="text"  name="nome" required>
-        <label for="email"> EMAIL:</label> 
-        <input type="text"  name="email" required>
-        <label for="senha"> SENHA:</label> 
-        <input type="password" name="senha" id="senha" requeried > 
-        <label for="confirma"> REPETIÇÃO DA SENHA:</label> 
-        <input type="password"  name="confirma" id="confirma" requeried onblur="alerta();">
-        </fieldset>
-    <BR>
-   <fieldset>
-<br>
-    <img src="img/sobrenos.jpeg" class="img-thumbnail nos" alt=" 10">
-    <h1 class="text-center  fonte-alterada">Acompanhe nossas novidades.</h1>
-    <h3 class="text-center fonte-alterada">cadastre seu email para receber informações exclusivas!!</h3>
-    <div class="row">
-        <br>
-        <br\>
-            <br>
-            <br>
-            <label for="inputPassword5" class="form-label">Email</label>
-            <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
-            <div id="passwordHelpBlock" class="form-text">
-                Confira seu celular para ver se recebeu notificações!
-            </div>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button class="btn btn- me-md-2" type="button">Cadastrar</button>
-                <br>
-                <div class='texto_cad'>
-                    <p>Já foi cadastrada/o? Entre na sua conta!</p>
-                    <button class="btn btn-me-md-2" color="$yellow-100" type="button" href="login.php">Página de login</button>
-            </div>
-                <footer>
-                    <br>
-                    <br>
-                    <div class="rodape">
-                        <p>Redes sociais</p>
-                        <p><a href="">@Serena_str_</a></p>
-                    </div>
-                </footer>   
-</body>
-</html>
+    <div class="login slide-up">
+      <div class="center">
+        <h2 class="form-title" id="login"><span>ou</span>login</h2>
+        <div class="form-holder">
+          <input type="email" class="input" placeholder="Email" />
+          <input type="password" class="input" placeholder="Password" />
+        </div>
+        <button class="submit-btn">login</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    console.clear();
+  const loginBtn = document.getElementById('login');
+  const signupBtn = document.getElementById('signup');
+  loginBtn.addEventListener('click', (e) => {
+    let parent = e.target.parentNode.parentNode;
+    Array.from(e.target.parentNode.parentNode.classList).find((element) => {
+      if(element !== "slide-up") {
+        parent.classList.add('slide-up')
+      }else{
+        signupBtn.parentNode.classList.add('slide-up')
+        parent.classList.remove('slide-up')
+      }
+    });
+  });
+  signupBtn.addEventListener('click', (e) => {
+    let parent = e.target.parentNode;
+    Array.from(e.target.parentNode.classList).find((element) => {
+      if(element !== "slide-up") {
+        parent.classList.add('slide-up')
+      }else{
+        loginBtn.parentNode.parentNode.classList.add('slide-up')
+        parent.classList.remove('slide-up')
+      }
+    });
+  });
+  </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+  </body>
+  </html>
