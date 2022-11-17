@@ -151,10 +151,8 @@ input:nth-of-type(6):checked~main#carousel {
   display: block;
 }
 
-.foda{
-  align-items: center;
-  height: 50px;
-
+.rodape{
+  text-align:center  
 }
 
 
