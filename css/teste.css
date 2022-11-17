@@ -51,7 +51,7 @@ div.item {
 
 div.item:nth-of-type(1) {
   --offset: 1;
-  background-image: url("../img/teste2.png");
+  background-image: url("../img/anel1\ \(360x640\)\ \(315x560\).jpg");
 }
 
 div.item:nth-of-type(2) {
@@ -142,7 +142,10 @@ input:nth-of-type(6):checked~main#carousel {
 .dropdown-content {
   display: none;
   position: absolute;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: #c9a0d8;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
   z-index: 1;
 }
 
@@ -150,8 +153,7 @@ input:nth-of-type(6):checked~main#carousel {
   display: block;
 }
 
+/*rodape*/
 .rodape{
   text-align:center  
 }
-
-
