@@ -1,4 +1,14 @@
 .nos{
-    widht: 40px;
-    height:auto;
+    width: 15px;
+    height: 20px;
 }
+@font-face {
+    font-family: 'winterbeauty';
+    src: url('./font/winterbeauty-Script.otf') format('truetype');
+  }
+  
+  .cadastro {
+    font-family: 'winterbeauty';
+    src: url('./font/winterbeauty-Script.otf') format('truetype');
+  }
+  }
