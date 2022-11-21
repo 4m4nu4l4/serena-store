@@ -186,12 +186,6 @@ h1 {
 html {
   font-size: 100%;
 }
-.style{
- height: 9rem;
-
-}
-
-
 
 .footer {
   display: flex;
@@ -315,4 +309,11 @@ html {
   .footer__nav {
     flex: 2 0px;
   }
+}
+.teste{
+  text-align: right;
+}
+
+.loi{
+  text-align: center;
 }
