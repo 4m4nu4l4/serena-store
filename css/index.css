@@ -177,7 +177,7 @@ h1 {
 }
 
 /*rodape*/
-*,
+/*,
 *:before,
 *:after {
   box-sizing: border-box;
@@ -188,6 +188,7 @@ html {
 }
 
 .footer {
+  
   display: flex;
   flex-flow: row wrap;
   padding: 20px 20px 20px 10px;
@@ -309,7 +310,10 @@ html {
   .footer__nav {
     flex: 2 0px;
   }
-}
+}*/
+
+/*container*/
+
 .teste{
   text-align: right;
 }
@@ -330,10 +334,48 @@ html {
 
   }
 .loi{
-  text-align: center;
+  text-align: left;
 }
 
 .loi{
-  text-align: center;
+  text-align: left;
 }
-
+.tamanho_footer{
+  height: 90px;
+  width: 30px;
+  
+}
+.footer_cor{
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px 20px 20px 10px;
+  color: #2f2f2f;
+  background-color:  #6CA8A1;
+  border-top: 1px solid #e5e5e5;
+}
+.footer_logo{
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+  text-align: left;
+}
+.texto_footer{
+  text-align: justify;
+  font-size: 15px;
+}
+.footer_botao{
+  text-align: left;
+  display: flex;
+  align-items:center;
+  justify-content: justify;
+  height: 36px;
+  max-width: max-content;
+  background-color: rgb(33, 33, 33, 0.07);
+  border-radius: 100px;
+  color: #2f2f2f;
+  line-height: 0;
+  margin: 0.6em 0;
+  font-size: 1rem;
+  padding: 0 1.3em;
+}
