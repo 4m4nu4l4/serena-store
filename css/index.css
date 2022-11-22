@@ -330,10 +330,14 @@ html {
 
   }
 .loi{
-  text-align: center;
+  text-align: left;
 }
 
 .loi{
-  text-align: center;
+  text-align: left;
 }
-
+.tamanho_footer{
+  height: 90px;
+  width: 30px;
+  background-color: #6CA8A1;
+}
