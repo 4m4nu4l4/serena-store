@@ -314,6 +314,29 @@ html {
   text-align: right;
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+.teste_1 {
+  width: 120%;
+  height: 20%;
+}
+.container{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container div {
+    width: 1500px;
+    height: 900px;
+
+  }
 .loi{
   text-align: center;
 }
+
+.loi{
+  text-align: center;
+}
+
