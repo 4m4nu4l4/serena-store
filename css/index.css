@@ -315,6 +315,7 @@ html {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .teste_1 {
   width: 120%;
   height: 20%;
@@ -331,9 +332,11 @@ html {
     height: 900px;
 
   }
-}
-=======
 .loi{
   text-align: center;
 }
->>>>>>> 43df76aa7101fd8f5516ba4643ef209f4bf1e23b
+
+.loi{
+  text-align: center;
+}
+
