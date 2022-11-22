@@ -43,7 +43,8 @@ h1 {
 
 .lado {
   width: 600px;
-  margin-top: 100px;
+  margin-top: 30px;
+
 }
 
 .cima {
@@ -378,4 +379,9 @@ html {
   margin: 0.6em 0;
   font-size: 1rem;
   padding: 0 1.3em;
+}
+.gridtr {
+  display: grid;
+  grid-template-columns: 100px 400px;
+
 }
