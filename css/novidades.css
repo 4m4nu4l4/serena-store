@@ -3,8 +3,19 @@
   }
   
   .logo-navbar {
-    width: 10rem;
+    width: 20rem;
     height: 10rem;
+  }
+ 
+  .gif {
+    width: 20rem;
+    height: 10rem;
+    margin-right: 100rem;
+  }
+  .gif1 {
+    width: 20rem;
+    height: 10rem;
+    margin-left: 100rem;
   }
   
   .fonte-alterada {
