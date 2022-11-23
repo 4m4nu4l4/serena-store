@@ -1,27 +1,17 @@
-?php 
+<?php
 
-   define('HOST', '000webhost'); 
+$servername = "localhost";
+$username = "id19648590_serena_store";
+$password = "spZxF^%)Rs6kp]rr";
 
-   define('DB', 'id19648590_serena'); 
+//criar a conexão
 
-    define('USER', 'id19648590_serena_store'); 
+$conn = new mysqli ($servername, $username, $password);
 
-   define("PASS", 'spZxF^%)Rs6kp]rr'); 
+//para verificar a conexão
 
-  
-
-    try{ 
-
-        $pdo = new PDO('mysql:host='.HOST.';dbname='.DB, USER, PASS, array(PDO::MYSQL_ATTR_INIT_COMMAND=>"SET NAMES utf8")); 
-
-    { $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
-
-    } catch (Exception $e){ 
-
-        echo '<h1> Erro ao conectar com o banco !!' . DB.'</h1>'; 
-
-    } 
-
-     
-
-?>  
+if ($conn->connect_error){
+    die("Conexão falha: " . $conn->connect_error);
+}
+echo "Conectado com sucesso";
+?>
