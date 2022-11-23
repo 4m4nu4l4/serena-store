@@ -362,9 +362,9 @@ html {
   text-align: left;
 }
 .texto_footer{
-  text-align: center;
+  text-align: justify;
   font-size: 15px;
-  align-items: center;
+  align-items: auto;
   margin-right: 30px;
 }
 /*.footer_botao{
@@ -394,14 +394,26 @@ html {
 /*.container_botao{
   align-items: left;
 }*/
-.container_texto{
-  height: 40%;
-  width: 65%;
-}
+.container_texto
+  {
+    text-align: justify;
+    background: white;
+    margin: 20px 0;
+    padding: 10px;
+  }
+
 /* .tiktok{
   width: 15px;
   height: 20px;
 } */
 .ajustar{
-  columns:50px 4;
+  columns:30px 3;
+}
+.whats{
+  width: 19rem;
+  border-radius: 50px;
+  border: none;
+  height: 36px;
+  margin-top: 20px;
+ 
 }
