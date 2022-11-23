@@ -365,8 +365,9 @@ html {
   text-align: center;
   font-size: 15px;
   align-items: center;
+  margin-right: 30px;
 }
-.footer_botao{
+/*.footer_botao{
   text-align: left;
   display: flex;
   align-items:center;
@@ -380,15 +381,27 @@ html {
   margin: 0.6em 0;
   font-size: 1rem;
   padding: 0 1.3em;
-}
+  vertical-align: auto;
+}*/
 .gridtr {
   display: grid;
   grid-template-columns: 100px 400px;
 
 }
-.centralizar_resto{
+//*.centralizar_resto{
  float: right;
-}
-.container_botao{
+}*/
+/*.container_botao{
   align-items: left;
+}*/
+.container_texto{
+  height: 40%;
+  width: 65%;
+}
+/* .tiktok{
+  width: 15px;
+  height: 20px;
+} */
+.ajustar{
+  columns:50px 4;
 }
