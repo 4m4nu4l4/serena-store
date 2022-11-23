@@ -362,14 +362,15 @@ html {
   text-align: left;
 }
 .texto_footer{
-  text-align: justify;
+  text-align: center;
   font-size: 15px;
+  align-items: center;
 }
 .footer_botao{
   text-align: left;
   display: flex;
   align-items:center;
-  justify-content: justify;
+  justify-content: right;
   height: 36px;
   max-width: max-content;
   background-color: rgb(33, 33, 33, 0.07);
@@ -384,4 +385,10 @@ html {
   display: grid;
   grid-template-columns: 100px 400px;
 
+}
+.centralizar_resto{
+ float: right;
+}
+.container_botao{
+  align-items: left;
 }
