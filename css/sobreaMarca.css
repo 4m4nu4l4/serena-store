@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "winterbeauty";
+    src: url("./font/winterbeauty-Script.otf") format("truetype");
+  }
+  
+  .color-default {
+    background-color: #feefce;
+  }
+  
+  h1 {
+    color: black;
+  }
+  
+  .logo-navbar {
+    width: 10rem;
+    height: 10rem;
+  }
+ 
+.grid {
+    display: grid;
+    grid-template-columns:  1000px 400px;
+   
+  }
