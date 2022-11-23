@@ -389,3 +389,6 @@ html {
 .centralizar_resto{
  float: right;
 }
+.container_botao{
+  align-items: left;
+}
