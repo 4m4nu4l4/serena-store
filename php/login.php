@@ -3,7 +3,7 @@ include 'connection.php';
 session_start();
 $_SESSION['nome'] = "";
 $_SESSION['email'] = "";
-$pdo = new PDO ('mysql:host=000webhost; dbname=id19648590_serena', 'id19648590_serena_store', 'spZxF^%)Rs6kp]rr');
+$pdo = new PDO ('mysql:host=localhost; dbname=id19648590_serena', 'id19648590_serena_store', 'spZxF^%)Rs6kp]rr');
 if(isset($_POST['acao'])){
     $email = $_POST['email'];
     $senha = $_POST['senha'];
@@ -30,7 +30,7 @@ if ($sql->execute(array($email, $nome))){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/cadastro.css">
+    <link rel="stylesheet" href="./css/testeDoCadastro.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
