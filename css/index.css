@@ -43,7 +43,8 @@ h1 {
 
 .lado {
   width: 600px;
-  margin-top: 100px;
+  margin-top: 30px;
+
 }
 
 .cima {
@@ -177,7 +178,7 @@ h1 {
 }
 
 /*rodape*/
-*,
+/*,
 *:before,
 *:after {
   box-sizing: border-box;
@@ -188,6 +189,7 @@ html {
 }
 
 .footer {
+  
   display: flex;
   flex-flow: row wrap;
   padding: 20px 20px 20px 10px;
@@ -309,34 +311,134 @@ html {
   .footer__nav {
     flex: 2 0px;
   }
-}
-.teste{
+}*/
+
+/*container*/
+
+.teste {
   text-align: right;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 .teste_1 {
   width: 120%;
   height: 20%;
 }
-.container{
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .container div {
-    width: 1500px;
-    height: 900px;
 
-  }
-.loi{
-  text-align: center;
+.container {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.loi{
-  text-align: center;
+.container div {
+  width: 1500px;
+  height: 900px;
+
 }
 
+.loi {
+  text-align: left;
+}
+
+.loi {
+  text-align: left;
+}
+
+.tamanho_footer {
+  height: 90px;
+  width: 30px;
+
+}
+
+/*.footer_cor{
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px 20px 20px 10px;
+  color: #2f2f2f;
+  background-color:  #6CA8A1;
+  border-top: 1px solid #e5e5e5;
+}*/
+.footer_logo {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.texto_footer {
+  text-align: justify;
+  font-size: 15px;
+  align-items: auto;
+  margin-right: 30px;
+}
+
+/*.footer_botao{
+  text-align: left;
+  display: flex;
+  align-items:center;
+  justify-content: right;
+  height: 36px;
+  max-width: max-content;
+  background-color: rgb(33, 33, 33, 0.07);
+  border-radius: 100px;
+  color: #2f2f2f;
+  line-height: 0;
+  margin: 0.6em 0;
+  font-size: 1rem;
+  padding: 0 1.3em;
+  vertical-align: auto;
+}*/
+.gridtr {
+  display: grid;
+  grid-template-columns: 100px 400px;
+
+}
+
+/*.centralizar_resto{
+ float: right;
+}*/
+
+
+/*.centralizar_resto{
+float: right;
+}
+
+*/
+
+/*.container_botao{
+  align-items: left;
+}*/
+.container_texto {
+  text-align: justify;
+  background: white;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.text-center {
+  height: 210px;
+  width: auto;
+}
+
+.a {
+  text-decoration-color: white;
+}
+
+.jumbotron {
+  margin: 30px;
+  color: #6CA8A1;
+}
+.jumbotron a{
+  color: #6CA8A1;
+}
+.display-4{
+  width: 15px;
+}
+.lead{
+  text-align: center;
+}
+.btn btn-light{
+ justify-content: center;
+}
