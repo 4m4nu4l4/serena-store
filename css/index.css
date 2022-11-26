@@ -51,14 +51,6 @@ h1 {
   margin-left: 150px;
 }
 
-.text .btn {
-  background-color: #ce7fa0;
-}
-
-.card {
-  background-color: #ce7fa0;
-}
-
 .app {
   height: 400vh;
 }
@@ -177,7 +169,7 @@ h1 {
   transition: all .4s;
 }
 
-/*rodape*/
+
 /*,
 *:before,
 *:after {
@@ -313,7 +305,6 @@ html {
   }
 }*/
 
-/*container*/
 
 .teste {
   text-align: right;
