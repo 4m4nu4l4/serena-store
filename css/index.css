@@ -168,7 +168,6 @@ h1 {
   z-index: -1;
   transition: all .4s;
 }
-
 .teste {
   text-align: right;
 }
@@ -187,7 +186,7 @@ h1 {
 
 .container div {
   width: 1500px;
-  height: 900px;
+  height: 800px;
 
 }
 
@@ -226,6 +225,7 @@ h1 {
 
 }
 
+
 .container_texto {
   text-align: justify;
   background: white;
@@ -246,19 +246,15 @@ h1 {
   margin: 30px;
   color: #6CA8A1;
 }
-
-.jumbotron a {
+.jumbotron a{
   color: #6CA8A1;
 }
-
-.display-4 {
+.display-4{
   width: 15px;
 }
-
-.lead {
+.lead{
   text-align: center;
 }
-
-.btn btn-light {
-  justify-content: center;
+.btn btn-light{
+ justify-content: center;
 }
