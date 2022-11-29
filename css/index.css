@@ -279,6 +279,7 @@ h1 {
 }
 .lead{
   text-align: center;
+  font-size: 30px;
 }
 .btn btn-light{
  justify-content: center;
