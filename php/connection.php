@@ -1,11 +1,11 @@
 <?php
 
-$servername = "localhost";
+$local = "localhost";
 $username = "id19648590_id19648590_serena_store";
-$password = "w3lCBK0n1xph2={b";
+$bdname= "id19928660_id19648590_serena";
 
 //criar a conexão
-$connect = new mysql($servername, $username, $password);
+$connect = new mysqli ($local, $username, $bdname);
 
 //para verificar a conexão
 

@@ -77,15 +77,54 @@ if ($sql->execute(array($email, $nome))){
         </div>
     </nav>
     <!-- Navbar termina aqui -->
-    <form action="" method="POST">
-    <label for="nome"> NOME:</label> 
-        <input type="text"  name="nome" required >
-        <label for="email"> EMAIL:</label> 
-        <input type="text"  name="email" required>
-        <label for="senha"> SENHA:</label> 
-        <input type="password" name="senha" id="senha" requeried > 
-        <label for="confirma"> REPETIÇÃO DA SENHA:</label> 
-        <input type="password"  name="confirma" id="confirma" requeried onblur="alerta();">  
-    </form>
+    <div class="login slide-up">
+      <div class="center">
+        <h2 class="form-title" id="login"><span>ou</span>login</h2>
+        <div class="form-holder">
+          <input type="email" class="input" placeholder="Email" />
+          <input type="password" class="input" placeholder="Password" />
+        </div>
+        <button class="submit-btn">login</button>
+      </div>
+    </div>
+  </div>
+  <div class="slw">
+  <div class="form-structor">
+    <div class="signup">
+      <h2 class="form-title" id="signup"><span>ou</span>cadastre-se</h2>
+      <div class="form-holder">
+        <input type="text" class="input" placeholder="Nome" />
+        <input type="email" class="input" placeholder="Email" />
+        <input type="password" class="input" placeholder="Senha" />
+      </div>
+      <button class="submit-btn">cadastrar</button>
+    </div>
+  <script>
+    console.clear();
+  const loginBtn = document.getElementById('login');
+  const signupBtn = document.getElementById('signup');
+  loginBtn.addEventListener('click', (e) => {
+    let parent = e.target.parentNode.parentNode;
+    Array.from(e.target.parentNode.parentNode.classList).find((element) => {
+      if(element !== "slide-up") {
+        parent.classList.add('slide-up')
+      }else{
+        signupBtn.parentNode.classList.add('slide-up')
+        parent.classList.remove('slide-up')
+      }
+    });
+  });
+  signupBtn.addEventListener('click', (e) => {
+    let parent = e.target.parentNode;
+    Array.from(e.target.parentNode.classList).find((element) => {
+      if(element !== "slide-up") {
+        parent.classList.add('slide-up')
+      }else{
+        loginBtn.parentNode.parentNode.classList.add('slide-up')
+        parent.classList.remove('slide-up')
+      }
+    });
+  });
+  </script>
 </body>
 </html>
