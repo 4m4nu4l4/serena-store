@@ -1,17 +1,16 @@
 <?php
 
 $servername = "localhost";
-$username = "id19648590_serena_store";
-$password = "spZxF^%)Rs6kp]rr";
+$username = "id19648590_id19648590_serena_store";
+$password = "Serena@store123";
 
 //criar a conexão
-
-$conn = new mysqli ($servername, $username, $password);
+$connect = new mysqli ($servername, $username, $password);
 
 //para verificar a conexão
 
-if ($conn->connect_error){
-    die("Conexão falha: " . $conn->connect_error);
+if ($connect->connect_error){
+    die("Conexão falha: " . $connect->connect_error);
 }
 echo "Conectado com sucesso";
 ?>
