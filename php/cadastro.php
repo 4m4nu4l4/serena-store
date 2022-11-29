@@ -1,11 +1,12 @@
 <?php
 /* começo do php para o cadastro*/
         include 'connection.php'; //incluir o cadastro na conexão
-
-    $login = $_POST ['login'];
-    $senha = MD5 ($_POST['senha']);
-    $connect = mysql_connect('localhost', 'id19648590_id19648590_serena_store', 'spZxF^%)Rs6kp]rr');
-    $db = mysql_select_db ('id19648590_serena') ;
+        $_SESSION['senha'] = "";
+        $_SESSION['email'] = "";
+    $email = 'email';
+    $senha = 'senha';
+    $connect = mysql_connect('localhost', 'id19648590_id19648590_serena_store', 'w3lCBK0n1xph2={b');
+    $db = mysql_select_db ('id19648590_id19648590_serena') ;
     $query_select = "SELECT nome FROM cliente  WHERE cliente = '$id_cliente' ";
     $select = mysql_query($query_select, $connect);
     $array = mysql_fetch_array($select);

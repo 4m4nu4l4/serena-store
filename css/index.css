@@ -20,6 +20,83 @@ h1 {
   width: auto;
   height: 80%;
 }
+.novidades{
+  text-align: center;
+  color: #6CA8A1;
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans|Prata');
+
+// timing functions
+$bounced-timing: cubic-bezier(.64,
+.57,
+.47,
+1.29);
+$back-timing: cubic-bezier(0.175,
+0.885,
+0.320,
+1.275);
+$ease-out-quint:cubic-bezier(0.230,
+1.000,
+0.320,
+1.000);
+$ease-in-quint:cubic-bezier(0.755,
+0.050,
+0.855,
+0.060);
+$time-fast: 0.1s;
+$time-mid: 0.6s;
+$font: 'Prata';
+$bg-button: #233142;
+$color-text: #ccc; //lighten($bg-button, 20%);
+$bg-body: #FD9191;
+body {
+  background-color: $bg-body;
+  font-size: 62.5%;
+}
+
+// display only
+button {
+  position: absolute;
+  left: 50%;
+  background-color: $bg-button;
+  border: none;
+  border-radius: 10px;
+  color: $color-text;
+  font-size: 1.5rem;
+  font-family: $font;
+  letter-spacing: 2px;
+}
+
+// description text
+.desc {
+  text-align:center;
+  font-size: 1rem;
+  color:lighten($color-text, 10%);
+  font-family: 'Open Sans';
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate3d(-50%, -35%, 0);
+}
+
+// positioning button
+#button1 {
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.button {
+  display: block;
+  width: 340px;
+  height: 80px;
+  cursor: pointer;
+  transition: box-shadow $time-fast linear;
+  &:hover {
+    box-shadow: 0 10px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+
+}
 
 .carousel-item {
   border-radius: 2.5%;
