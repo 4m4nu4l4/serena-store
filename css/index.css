@@ -152,7 +152,7 @@ h1 {
   animation: moveInBottom 5s ease-out;
   animation-fill-mode: backwards;
 }
-}
+
 
 .botao1 {
   animation: moveInBottom 5s ease-out;
@@ -202,18 +202,7 @@ h1 {
   height: 20%;
 }
 
-.container {
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.container div {
-  width: 1500px;
-  height: 800px;
-
-}
 
 .loi {
   text-align: left;
@@ -229,20 +218,6 @@ h1 {
 
 }
 
-.footer_logo {
-  font-family: 'Pacifico', cursive;
-  font-weight: 400;
-  text-transform: lowercase;
-  font-size: 1.5rem;
-  text-align: left;
-}
-
-.texto_footer {
-  text-align: justify;
-  font-size: 15px;
-  align-items: auto;
-  margin-right: 30px;
-}
 
 .gridtr {
   display: grid;
@@ -263,9 +238,6 @@ h1 {
   width: auto;
 } */
 
-.a {
-  text-decoration-color: white;
-}
 
 .jumbotron {
   margin: 30px;

@@ -20,3 +20,13 @@
     font-size: 1.5rem;
     text-align: left;
 }
+.container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+.poço{
+    margin-top: 50px;
+}
