@@ -3,7 +3,7 @@ include 'connection.php';
 session_start();
 $_SESSION['nome'] = "";
 $_SESSION['email'] = "";
-$pdo = new PDO ('mysql:host=localhost; dbname=id19648590_serena', 'id19648590_serena_store', 'spZxF^%)Rs6kp]rr');
+$pdo = new PDO ('mysql:host=localhost; dbname=id19648590_serena', 'id19648590_serena_store', 'w3lCBK0n1xph2={b');
 if(isset($_POST['acao'])){
     $email = $_POST['email'];
     $senha = $_POST['senha'];
