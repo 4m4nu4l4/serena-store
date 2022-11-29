@@ -1,38 +1,37 @@
 @font-face {
   font-family: "winterbeauty";
   src: url("./font/winterbeauty-Script.otf") format("truetype");
-  }
-  
-  .color-default {
+}
+
+.color-default {
   background-color: #feefce;
-  }
-  
-  h1 {
+}
+h1 {
   color: black;
-  }
-  
-  .logo-navbar {
+}
+.logo-navbar {
   width: 10rem;
   height: 10rem;
-  
-  }
-  
-  .grid {
+}
+.grid {
   display: grid;
-  grid-template-columns: 800px 400px;
+  grid-template-columns: 900px 400px;
   margin-top: 50px;
-  margin-bottom: 57px;
-
-  }
-  .lado {
+}
+.lado {
   width: 600px;
-  
-  }
-  
-  .cima {
-  margin-left: 220px;
-  }
-
-  .fonte-alterada {
-    font-family: winterbeauty;
-  }
+}
+.cima {
+  margin-left: 300px;
+}
+.fonte-alterada {
+  font-family: winterbeauty;
+}
+.coluna-33 {
+  margin: 10px;
+}
+.linha {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 290px;
+}
