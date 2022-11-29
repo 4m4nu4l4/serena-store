@@ -5,7 +5,7 @@
         $_SESSION['email'] = "";
     $email = 'email';
     $senha = 'senha';
-    $connect = mysql_connect('localhost', 'id19648590_id19648590_serena_store', 'Serena@store123');
+    $connect = mysql_connect('localhost', 'id19648590_id19648590_serena_store', 'w3lCBK0n1xph2={b');
     $db = mysql_select_db ('id19648590_id19648590_serena') ;
     $query_select = "SELECT nome FROM cliente  WHERE cliente = '$id_cliente' ";
     $select = mysql_query($query_select, $connect);
