@@ -1,11 +1,12 @@
 <?php
 
 $hostname = "localhost";
-$username = "id19648590_id19648590_serena_store";
+$username = "serena-store";
 $bdname= "id19928660_id19648590_serena";
+$senha= "}}Hxe#_wJvn[f/3z";
 
 //criar a conexão
-$connect = new mysqli ($hostname, $username, $bdname);
+$connect = new mysqli ($hostname, $username, $bdname, $senha);
 
 //para verificar a conexão
 
