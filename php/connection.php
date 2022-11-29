@@ -5,7 +5,7 @@ $username = "id19648590_id19648590_serena_store";
 $password = "Serena@store123";
 
 //criar a conexão
-$connect = new mysqli ($servername, $username, $password);
+$connect = new mysql($servername, $username, $password);
 
 //para verificar a conexão
 
