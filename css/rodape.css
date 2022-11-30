@@ -1,35 +1,34 @@
+
 .container_texto {
     text-align: justify;
     background: white;
     margin: 20px 0;
     padding: 10px;
 }
-
 .text-center {
     height: 210px;
     width: auto;
 }
-
 .a {
     text-decoration-color: white;
 }
-
 .footer_logo {
     font-family: 'Pacifico', cursive;
-    font-weight: 400;                                                                 
+    font-weight: 400;
     font-size: 1.5rem;
     text-align: left;
 }
 .containers {
-
     display: flex;
     align-items: center;
     justify-content: center;
   }
- 
 .poço{
     margin-top: 50px;
 }
 .topo{
     margin-top: -20px;
+}
+.center {
+    width: auto;
 }

@@ -20,28 +20,31 @@ h1 {
   width: auto;
   height: 80%;
 }
-.novidades{
+
+.novidades {
   text-align: center;
   color: #6CA8A1;
- }
- #top{
-   margin: -100px;
- }
- #top1{
-  margin: -100px;
- }
- #top2{
-  margin: -100px;
- }
- .botaonovidades{
+}
 
-   height:10px ;
-   width: 10px;
-   margin-top: -140px;
-    text-align: center;
-  /*color: #FFB379; */
- }
+#top {
+  margin: -100px;
+}
 
+#top1 {
+  margin: -100px;
+}
+
+#top2 {
+  margin-top: -100px;
+}
+
+.botaonovidades {
+
+  height: 10px;
+  width: 10px;
+  margin-top: -140px;
+  text-align: center;
+}
 
 .carousel-item {
   border-radius: 2.5%;
@@ -193,6 +196,7 @@ h1 {
   z-index: -1;
   transition: all .4s;
 }
+
 .teste {
   text-align: right;
 }
@@ -201,8 +205,6 @@ h1 {
   width: 120%;
   height: 20%;
 }
-
-
 
 .loi {
   text-align: left;
@@ -218,13 +220,11 @@ h1 {
 
 }
 
-
 .gridtr {
   display: grid;
   grid-template-columns: 100px 400px;
 
 }
-
 
 .container_texto {
   text-align: justify;
@@ -233,25 +233,27 @@ h1 {
   padding: 10px;
 }
 
-/* .text-center {
-  height: 210px;
-  width: auto;
-} */
-
-
 .jumbotron {
   margin: 30px;
   color: #6CA8A1;
 }
-.jumbotron a{
+
+.jumbotron a {
   color: #6CA8A1;
 }
-.display-4{
+
+.display-4 {
   width: 15px;
 }
-.lead{
+
+.lead {
   text-align: center;
 }
-.btn btn-light{
- justify-content: center;
+
+.btn btn-light {
+  justify-content: center;
+}
+
+.testefoda{
+  margin-left: -200px;
 }
